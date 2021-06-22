@@ -46,7 +46,7 @@ export default class Body extends React.Component {
                         {this.props.children}
                         <Footer {...this.props} page={this.props.page} site={this.props} />
                     </div>
-                    <div style={toStyleObj("display: none")} id="template-params" data-api-key={_.get(this.props, 'data.config.snipcart_api_key', null)} data-templates-url={withPrefix('js/snipcart-templates.vue')}/>
+                    <div data-config-modal-style="side" style={toStyleObj("display: none")} id="template-params" data-api-key={_.get(this.props, 'data.config.snipcart_api_key', null)} data-templates-url={withPrefix('js/snipcart-templates.vue')}/>
             </React.Fragment>
         );
     }
